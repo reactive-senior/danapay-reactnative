@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-demomenu="y">
+
+<!-- Mirrored from applead.rgenesis.com/demo/index-20.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Jan 2017 09:45:22 GMT -->
+<head>
+	<title>Danapay - Transfert d'argent</title>
+</head>
+<body onload="{
+            document.addEventListener('DOMContentLoaded', function() {mrTangoCollect.load();}, false);
+            
+        }">
+    <!-- <label id="user_email" >...</label><br> -->
+    <!-- mrTangoCollect.set.payer(document.getElementById('user_email').innerHTML); -->
+    <!-- mrTangoCollect.submit('1.52', 'EUR', 'Order 1123'); return false; -->
+    <!-- <button onclick="
+        ">Pay 1.52 EUR</button> -->
+</body>
+<script src="https://payment.mistertango.com/resources/scripts/mt.collect.js?v=01" type="text/javascript"></script>
+<script type="text/javascript">
+    function load(_userEmail, _trx_id){
+        document.addEventListener('DOMContentLoaded', function() {mrTangoCollect.load();}, false);
+        mrTangoCollect.set.recipient('moussa.dembele.84@gmail.com');
+        mrTangoCollect.set.lang('fr');
+        mrTangoCollect.custom={'market':'FR'};
+        mrTangoCollect.set.payer(_userEmail);
+        mrTangoCollect.set.payment_type_forced('credit_card');
+        
+        mrTangoCollect.submit('1.52', 'EUR', _trx_id);
+        return false;
+    }
+</script>
+

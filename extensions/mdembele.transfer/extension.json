@@ -1,0 +1,56 @@
+{
+  "name": "transfer",
+  "title": "Transfer",
+  "version": "0.0.6",
+  "description": "Application de transfert et de paiement danapay",
+  "platform": "1.5.*",
+  "screens": [
+    {
+      "name": "Walkthrough"
+    },
+    {
+      "name": "Entry"
+    },
+    {
+      "name": "Login"
+    },
+    {
+      "name": "Home"
+    },
+    {
+      "name": "LogoutBtn"
+    },
+    {
+      "name": "ContactSearch"
+    },
+    {
+      "name": "AmountSetting"
+    },
+    {
+      "name": "Confirmation"
+    },
+    {
+      "name": "customersTransactions"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Walkthrough",
+      "title": "Walkthrough",
+      "description": "A shortcut for Walkthrough",
+      "screen": "@.Walkthrough"
+    },
+    {
+      "name": "Entry",
+      "title": "Entry",
+      "description": "Ecran de redirection vers le walkthrough et l'authentification ou l'écran Home",
+      "screen": "@.Entry"
+    },
+    {
+      "name": "LogoutBtn",
+      "title": "Logout btn",
+      "description": "A shortcut for LogoutBtn",
+      "screen": "@.LogoutBtn"
+    }
+  ]
+}
